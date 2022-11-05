@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #fdfaf7;
+    line-height: 1.6;
+}
+
+
+/*Portada*/
+
+#fondo{
+    background-image: url('../img/Playa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#fondo h1{
+    font-size: 50px;
+    line-height: 1.2;
+    color: #926239;
+}
+
+#fondo p{
+    font-size: 20px;
+    color: #926239;
+}
+
+#fondo .boton{
+    font-size: 18px;
+    text-decoration: none;
+    color: #926239;
+    border: #926239 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#fondo .boton:hover{
+    background: #926239;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* Nav-Bar */
+
+.header{
+    background-color: #1b3039;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10% ;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+
+.header .logo img{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+
+.header .nav-links{
+    list-style: none;
+
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #fff;
+    text-decoration:  none;
+
+}
+
+.header .nav-links li a:hover{
+    color: #926239;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #f9f9f9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #f4f4f4;
+    color: #926239;
+    transform: scale(1.1);
+}
+
+
+
+/*Lee Mas*/
+
+.hero{
+    background-image: linear-gradient(120deg, rgba(146, 99, 57, 0.700) 0%, rgb(27, 48, 57, 0.700) 100%), url("../img/Familiaplaya.jpg");
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.textos-hero{
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos-hero h1{
+    font-size: 60px;
+}
+
+.textos-hero p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.textos-hero a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #a18cd1;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.svg-hero{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.colur{
+    background-color: #1b3039;
+}
+
+.contenedor,
+.wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 80px 80px;
+}
+.contenedor{
+    padding: 80px 0;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo.left{
+    text-align: left;
+}
+
+.titulo.right{
+    text-align: left;
+    padding-left: 10vh;
+    margin-top: 18vh;
+}
+
+.parrafo.right{
+    text-align: left;
+    padding-left: 10vh;
+}
+
+.website{
+    display: flex;
+    justify-content: space-between;
+}
+
+.website img{
+    width: 48%;
+}
+
+.website .contenedor-textos-main{
+    width: 40%;
+}
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cta{
+    font-weight: 700;
+    color: #1b3039;
+    text-decoration: none;
+    padding: 9px 25px;
+    background: #926239;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    background: #926239;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+
+.cta:hover{
+    background-color: #f4f4f4;
+    color: #926239;
+    transform: scale(1.1);
+}
+
+.info-colur{
+    background: #fff;
+    color: #926239;
+    padding: 80px 0 80px 0;
+}
+
+.descuento h2{
+    text-align: center;
+    font-size: 8vh;
+    font-weight: 500;
+    padding-bottom: 2vh;
+}
+
+.descuento p{
+    text-align: center;
+    font-size: 3vh;
+}
+
+.contenedor,
+.familias-contenedor2{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+.contenedor2{
+    padding: 80px 0;
+}
+
+.website2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.website2 img{
+    width: 48%;
+}
+
+.website2 .contenedor-textos-main{
+    width: 40%;
+}
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cta2{
+    font-weight: 700;
+    color: #1b3039;
+    text-decoration: none;
+    padding: 9px 25px;
+    background: #926239;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    background: #926239;
+    color: #ffffff;
+    transform: scale(1.1);
+    margin-left: 10vh;
+}
+
+
+.cta2:hover{
+    background-color: #f4f4f4;
+    color: #926239;
+    transform: scale(1.1);
+}
+
+.galeria{
+    background: #fff;
+    padding-top: 10vh;
+}
+
+.galeria h2{
+    color: #926239;
+    font-size: 10vh;
+}
+
+.galeria-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.galeria-cont>img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.last-colur{
+    background-color: #1b3039;
+}
+
+.last-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.last-section img{
+    padding-top: 10vh;
+    width: 48%;
+}
+
+.last-section .contenedor-textos-main2{
+    width: 40%;
+}
+
+.contenedor-textos-main2 h2{
+    padding-top: 20vh;
+}
+
+#footer{
+    background: #926239;
+    color: #fff;
+}
+
+#footer h2{
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    font-size: 8vh;
+}
+
+
+
+
+
+
+/*Servicio*/
+
+.cards.contenedor h2{
+    font-size: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+
+
+.content-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 #926239;
+    transform: scale(1);
+    transition: transform 0.6s;
+    padding-bottom: 5vh;
+}
+
+.card h3{
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    font-size: 5vh;
+}
+
+.card img{
+    padding-top: 5vh;
+    width: 30vh;
+    object-fit: center;
+    margin-bottom: 20px;
+}
+
+.card:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.card i{
+    margin: 30px 0 20px 0;
+    color: #cc9199;
+    font-size: 50px;
+}
+
+.card p{
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*Informacion*/
+
+#info{
+    text-align: center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+#info h1{
+    font-size: 8vh;
+    padding-bottom: 5vh;
+}
+
+#info h2{
+    font-size: 5vh;
+}
+
+
+
+
+/*Contacto*/
+
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: 1px  solid #fff;
+    padding: 20px 10px;
+}
+
+.input::placeholder{
+    color: #fff;
+    font-family: 'raleway', 'sans-serif';
+}
+
+input[type="text"], 
+input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: tomato;
+    background: #fff;
+}
+
+@media screen and (max-width:800px){
+    .textos-hero h1{
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+
+
