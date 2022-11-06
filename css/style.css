@@ -380,16 +380,27 @@ body{
     padding-top: 20vh;
 }
 
+
+.footer-colur{
+    background-color: #926239;
+}
+
+
 #footer{
     background: #926239;
     color: #fff;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
 }
 
-#footer h2{
-    text-align: center;
-    padding-top: 3vh;
-    padding-bottom: 5vh;
-    font-size: 8vh;
+#footer img{
+    width: 3vh;
+    display: grid;
+    object-fit: cover;
+    margin-bottom: 5vh;
 }
 
 
